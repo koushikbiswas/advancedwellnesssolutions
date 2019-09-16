@@ -1,0 +1,12 @@
+{
+  "name": "on-page-editor",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0",
+    "@angular/material":"latest",
+    "@angular/cdk":"latest",
+    "@angular/animations":"latest",
+    "hammerjs":"latest"
+  }
+}

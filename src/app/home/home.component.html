@@ -1,0 +1,478 @@
+<span class="scroll-to-top" [ngClass]="{ 'show-scrollTop': windowScrolled }">
+  <a (click)="scrollToTop()">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</span>
+
+<div class="container-fluid nmsfunneldoctor_block1">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <h2>ADVANCED ANS TECHNOLOGY – BETTER PATIENT CARE – INCREASE PRACTICE REVENUE</h2>
+  </div>
+</div>
+
+<div class="container-fluid nmsfunneldoctor_block2">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="row nmsfunneldoctor_block2_innerwrapper">
+      <div class="col-md-8 nmsfunneldoctor_block2_left">
+        <div class="nmsfunneldoctor_block2_left_top">
+          <div class="nmsfunneldoctor_block2_left_top_logo">
+            <img src="../../assets/images/landinglogonew.png" alt="landinglogonew" class="landinglogonew" />
+          </div>
+          <div class="nmsfunneldoctor_block2_left_top_content">
+            <h2>
+              This cutting - edge medical device and Program<br />
+              will Evolve your Practice!
+            </h2>
+          </div>
+        </div>
+        <h3>
+          <span class="spnabigtxt">attention</span> Physicians, Office Manager
+          and Practice Managers:
+        </h3>
+        <h4>
+          <span>WE HAVE THE ONLY FULL HEALTH CARE MANAGEMENT SYSTEM FOR ANS TESTING <br>WITH A BUILT IN PROPRIETARY “SMART” ENGAGEMENT FORM BILLING PROFILE!</span>
+        </h4>
+        <div class="nmsfunneldoctor_block2_left_content2">
+          <h2>
+              The Advance Wellness Solutions ANS device and smart engagement form technology will transform your practice. There are other <span>devices on the market</span>, but none off them give you the incredible amount of <span>analytical data or the billing profile</span> support we offer!  Produce incredible results for your patients and a super bill that is pre-populated with your exact billing requirements to get reimbursed! 
+          </h2>
+        </div>
+        <img src="../../assets/images/landingleftimg1man.png" alt="landingleftimg1man" class="landingleftimg1man" />
+        <img src="../../assets/images/landingleftimg2computer.png" alt="landingleftimg2computer"
+          class="landingleftimg2computer" />
+
+        <div class="btnleftinfo">
+          <h2>
+              <span>DRAMATICALLY</span> IMPROVE YOUR PATIENT OUTCOMES WHILE <span>INCREASING PRACTICE REVENUES</span> WITH OUR COMPLETE ANS SYSTEM.
+          </h2>
+        </div>
+      </div>
+      <div class="col-md-4 nmsfunneldoctor_block2_right">
+        <div class="nmsfunneldoctor_formblock">
+          <h2>Speak with a Consultant NOW!</h2>
+          <h3>Set a <span>15</span>-minute quick discussion</h3>
+          <h1>
+            improve your patients’<br />
+            needs, satistfaction,<br />
+            & health quality <span>now!</span>
+          </h1>
+          <!-- <form>
+                        <div class="form-group">
+                            <div class="palceholder">
+                                <label for="fname">First name</label>
+                                <span class="star">*</span>
+                            </div>
+                            <input type="text" class="form-control" id="fname" required>
+                            <span class="bmd-help">error msg.</span>
+                        </div>
+                        <div class="form-group">
+                            <div class="palceholder">
+                                <label for="lname">Last name</label>
+                                <span class="star">*</span>
+                            </div>
+                            <input type="text" class="form-control" id="lname" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="palceholder">
+                                <label for="email">Email</label>
+                                <span class="star">*</span>
+                            </div>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="palceholder">
+                                <label for="phone">Telephone number</label>
+                                <span class="star">*</span>
+                            </div>
+                            <input type="text" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="palceholder">
+                                <label for="city">City</label>
+                                <span class="star">*</span>
+                            </div>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="palceholder">
+                                <label for="state">State</label>
+                                <span class="star">*</span>
+                            </div>
+                            <input type="text" class="form-control" id="state" required>
+                        </div>
+                        <div class="btnsubmitwrapper">
+                            <button type="submit" class="btnsubmit">Submit</button>
+                            <img src="../../assets/images/submiticon.png" class="submiticon">
+                        </div>
+                    </form> -->
+
+          <form [formGroup]="myform" (ngSubmit)="doSubmit(template)">
+            <div class="form-group">
+              <input class="form-control" placeholder="First Name" type="text" [formControl]="myform.controls['firstname']"
+                (blur)="inputUntouch(myform, 'firstname')" />
+              <span *ngIf="
+                  myform.controls['firstname'].touched &&
+                  !myform.controls['firstname'].valid
+                " class="errortext">First Name is required</span>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" placeholder="Last Name" type="text" [formControl]="myform.controls['lastname']"
+                (blur)="inputUntouch(myform, 'lastname')" />
+              <span *ngIf="
+                  myform.controls['lastname'].touched &&
+                  !myform.controls['lastname'].valid
+                " class="errortext">Last Name is required</span>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" placeholder="Email" type="email" [formControl]="myform.controls['email']"
+                (blur)="inputUntouch(myform, 'email')" />
+              <span *ngIf="
+                  myform.controls['email'].touched &&
+                  !myform.controls['email'].valid
+                " class="errortext">Email Number is required</span>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" placeholder="Phone Number" type="text"
+                [formControl]="myform.controls['phoneno']" (blur)="inputUntouch(myform, 'phoneno')" />
+              <span *ngIf="
+                  myform.controls['phoneno'].touched &&
+                  !myform.controls['phoneno'].valid
+                " class="errortext">Phone Number is required</span>
+            </div>
+
+            <div class="form-group">
+              <input class="form-control" placeholder="Address" type="text" [formControl]="myform.controls['address']"
+                (blur)="inputUntouch(myform, 'address')" />
+              <span *ngIf="
+                  myform.controls['address'].touched &&
+                  !myform.controls['address'].valid
+                " class="errortext">Address is required</span>
+            </div>
+
+            <div class="form-group">
+              <select class="form-control" placeholder="Select State" type="text"
+                [formControl]="myform.controls['state']" (blur)="inputUntouch(myform, 'state')">
+                <option value="">Select State</option>
+                <option *ngFor="let item of stateslist" value="{{ item.abbreviation }}">{{ item.name }}</option>
+              </select>
+              <span *ngIf="
+                  myform.controls['state'].touched &&
+                  !myform.controls['state'].valid
+                " class="errortext">State is required</span>
+            </div>
+
+            <div class="form-group">
+              <div class="btnsubmitwrapper">
+                <button type="submit" class="btnsubmit" data-toggle="modal">
+                  Submit
+                </button>
+                <img src="../../assets/images/submiticon.png" class="submiticon" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid nmsfunneldoctor_block3">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="row nmsfunneldoctor_block3_innerwrapper">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block3_left">
+        <h2>Watch This Video!</h2>
+        <div class="videoWrapper">
+          <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/Ac6k4a7HwhM?rel=0&hd=1" frameallow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+          <!-- <img width="560" height="315" src="../../assets/images/suvideowrapperdivnew.jpg" > -->
+          <video width="400" controls="" controlslist="nodownload" style="border: solid 5px #000;">
+            <!-- <source src="../../assets//video/How To Use The NMS-100_5-17-17.mp4" type="video/mp4" /> -->
+            <source src="http://crmfiles.influxhostserver.s3-website.us-east-2.amazonaws.com/How%20To%20Use%20The%20NMS-100_5-17-17.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block3_right">
+        <h2>Early detection allows doctors to more effectively identify symptoms and disease complications in support of preventative treatment plans and managing risks for:</h2>
+        <ul>
+          <li>Heart attack</li>
+          <li>Stroke</li>
+          <li>Heart Rate Variability Issues</li>          
+          <li>Angiotensin Activity</li>
+          <li>Cardiac Output to Body Surface Area</li>
+          <li>Atherosclerosis</li>
+          <li>Peripheral Vascular Disease</li>
+          <li>Abnormal LDL Cholesterol Levels</li>
+          <li>Hyperhydrosis & Hypohydrosis</li>
+          <li>Insulin Resistance</li>
+          <li>Impaired Glucose Intolerance</li>
+          <li>Diabetes with Complications</li>
+          <li>Nerve Damage</li>
+          <li>Physical & Mental Stress and Fatigue</li>
+          <li>Obesity</li>
+          <li>Establishes Medical Necessity for additional In-Depth Patient Testing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid nmsfunneldoctor_block8">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <h2>Testing for 8 Essential Risk Factors</h2> 
+    <ol>
+      <li class="libase li1">
+        <div class="listwarppercls">
+            <h4>Autonomic Nervous System Dysfunction</h4>
+            <span class="imgwrapperblock8">
+              <img src="../../assets/images/block8featureimg1.jpg" class="imgblock8cls">
+            </span>
+        </div>
+        
+      </li>
+      <li class="libase li2">
+          <div class="listwarppercls">
+              <h4>Insulin Resistance</h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg2.jpg" class="imgblock8cls">
+              </span>
+          </div>
+      </li>
+      <li class="libase li3">
+          <div class="listwarppercls">
+              <h4>Endothelial Dysfunction.</h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg3.jpg" class="imgblock8cls">
+              </span>
+          </div>
+      </li>
+      <li class="libase li4">
+          <div class="listwarppercls">
+              <h4>Sudomotor Dysfunction</h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg4.jpg" class="imgblock8cls">
+              </span>
+          </div>    
+      </li>
+      <li class="libase li5">
+          <div class="listwarppercls">
+              <h4>Cardiac Autonomic Neuropathy</h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg5.jpg" class="imgblock8cls">
+              </span>
+          </div>
+      </li>
+      <li class="libase li6">
+          <div class="listwarppercls">
+              <h4>Cardio- Metabolic Risk</h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg6.jpg" class="imgblock8cls">
+              </span>
+          </div>
+      </li>
+      <li class="libase li7">
+          <div class="listwarppercls">
+              <h4>Small Fibre Neuropathy</h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg7.jpg" class="imgblock8cls">
+              </span>
+        </div>
+      </li>
+      <li class="libase li8">
+          <div class="listwarppercls">
+              <h4>Cardio-vascular Disease </h4>
+              <span class="imgwrapperblock8">
+                <img src="../../assets/images/block8featureimg8.jpg" class="imgblock8cls">
+              </span>
+          </div>
+      </li>
+      
+      
+     
+      
+    </ol>
+    
+  </div>
+</div>
+
+<div class="container-fluid nmsfunneldoctor_block4">
+    <div class="nmsfunneldoctor_block_wrapper">
+        <h2>Click on images for larger view</h2>
+        <div class="nmsfunneldoctor_block4_content_wrapper">
+            <div class="nmsfunneldoctor_block4_content">
+                <div class="ImgWrapper" >
+                    <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img1.jpg" (click)="openmodal('../../assets/images/nmsfunneldoctorblock4img1.jpg',imagetemplate)">
+                </div>
+            </div>
+            <div class="nmsfunneldoctor_block4_content">
+                <div class="ImgWrapper" >
+                    <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img2.jpg" (click)="openmodal('../../assets/images/nmsfunneldoctorblock4img2.jpg',imagetemplate)">
+                </div>
+            </div>
+            <div class="nmsfunneldoctor_block4_content">
+                <div class="ImgWrapper" >
+                    <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img3.jpg" (click)="openmodal('../../assets/images/nmsfunneldoctorblock4img3.jpg',imagetemplate)">
+                </div>
+            </div>
+            <div class="nmsfunneldoctor_block4_content">
+                <div class="ImgWrapper">
+                    <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img4.jpg" (click)="openmodal('../../assets/images/nmsfunneldoctorblock4img4.jpg',imagetemplate)">
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btngetinfonow"><span>Get info now!</span></button>
+    </div>
+</div>
+
+<!-- <div class="container-fluid nmsfunneldoctor_block4">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="nmsfunneldoctor_block4_content_wrapper">
+      <div class="nmsfunneldoctor_block4_content">
+        <div class="ImgWrapper">
+          <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img1.jpg" />
+        </div>
+      </div>
+      <div class="nmsfunneldoctor_block4_content">
+        <div class="ImgWrapper">
+          <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img2.jpg" />
+        </div>
+      </div>
+      <div class="nmsfunneldoctor_block4_content">
+        <div class="ImgWrapper">
+          <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img3.jpg" />
+        </div>
+      </div>
+      <div class="nmsfunneldoctor_block4_content">
+        <div class="ImgWrapper">
+          <img width="560" height="315" src="../../assets/images/nmsfunneldoctorblock4img4.jpg" />
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btngetinfonow">
+      <span>Get info now!</span>
+    </button>
+  </div>
+</div> -->
+
+<!-- <div class="container-fluid nmsfunneldoctor_block5">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="row nmsfunneldoctor_block5_content_wrapper">
+      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block5_content_left">
+        <div class="nmsfunneldoctor_block5_top">
+          <div class="nmsfunneldoctor_block5_imgwrapper">
+            <img src="../../assets/images/nmsfunneldoctorblock5img2.png" />
+          </div>
+          <div class="nmsfunneldoctor_block5_topright">
+            <div class="nmsfunneldoctor_block5_topright_inner_2">
+              <h2>dr tinsley, M.D., FACs</h2>              
+            </div>
+            <h3>
+                <strong>Vascular Surgeon –</strong> <br><span>specializing in</span> Endovascular
+                <span>and</span> Open Vascular Surgery
+              </h3>
+          </div>
+        </div>
+        <p>
+          “I can tell you that every patient with a BMI over 25 would benefit
+          from evaluation with the
+          <span>NMS-100</span>. The early identification of abnormal biomarkers
+          for <span>CAD, PAD,</span> diabetes and hypertension should allow you
+          to measure, motivate and monitor your specific patient population,
+          leading to improved health in your community through the personalized
+          wellness programs.”
+        </p>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block5_content_right">
+        <img src="../../assets/images/nmsfunneldoctorblock5img1.png" alt="nmsfunneldoctorblock5img1"
+          class="nmsfunneldoctorblock5img1" />
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container-fluid nmsfunneldoctor_block5">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="row nmsfunneldoctor_block5_content_wrapper">
+      <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block5_content_left">
+        <div class="nmsfunneldoctor_block5_topright_inner_2">
+          <h2>Physician Taxonomies that will qualify for our system:</h2>
+        </div>
+        <ul>
+          <li>Family Medicine</li>
+          <li>General Practice</li>
+          <li>Primary Care</li>          
+          <li>Cardiology</li>
+          <li>Internal Medicine</li>
+          <li>Endocrinology</li>
+          <li>D.O. (Doctor of Osteopathy)</li>
+          <li>Pain Management (Integrated Practice)</li>
+          <li>OB-GYN</li>
+          <li>Multi-Specialty Group</li>
+          <li>Orthopedic Surgeon (that provides long-term patient care)</li>
+          <li>Pain Management Group with MD of proper taxonomy</li>
+        </ul>
+      </div>
+      <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block5_content_right">
+        <img src="../../assets/images/nmsfunneldoctorblock5img1.png" alt="nmsfunneldoctorblock5img1"
+          class="nmsfunneldoctorblock5img1" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid nmsfunneldoctor_block6">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="row nmsfunneldoctor_block6_content_wrapper">
+      <div class="col-md-4 col-sm-12 col-xs-12 nmsfunneldoctor_block6_left">
+        <img src="../../assets/images/nmsfunneldoctorblock6img1.jpg" alt="nmsfunneldoctorblock6img1"
+          class="nmsfunneldoctorblock6img1" />
+      </div>
+      <div class="col-md-8 col-sm-12 col-xs-12 nmsfunneldoctor_block6_right">
+        <h2>
+          <span>Contact us now</span> and get the most advanced ANS device and wellness system in the industry.  Our “smart” engagement technology will make sure you get paid!
+        </h2>
+        <button type="button" class="btngetinfonow">
+          <span>Get info now!</span>
+        </button>
+        <img src="../../assets/images/nmsfunneldoctorblock6img2.png" alt="nmsfunneldoctorblock6img2"
+          class="nmsfunneldoctorblock6img2" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid nmsfunneldoctor_block7">
+  <div class="nmsfunneldoctor_block_wrapper">
+    <div class="row nmsfunneldoctor_block7_content_wrapper">
+      <div class="col-md-12 col-sm-12 col-xs-12 nmsfunneldoctor_block7_copyright">
+        <p>
+          <span><a href="javascript:void(0);">Privacy Policy</a> |
+            <a href="javascript:void(0);">Terms & Conditions</a></span>
+        </p>
+        <p>© Copyright 2018 Nex Med Solutions- All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <button type="button" class="close" (click)="closep()">&times;</button>
+    <img alt="#" class="modallogo" src="../../assets/images/landinglogonew.png" />
+    <p>
+      Thank you for your interest in the advancewellnesssoluytions.com services.
+      Our team will get back to your shortly.
+    </p>
+  </div>
+</ng-template>
+
+<ng-template #imagetemplate>
+    <div class="modal-body text-center">
+      <button type="button" class="close" (click)="closep()">&times;</button>
+     
+      <img *ngIf="imgval!=null" [src]="imgval">
+    </div>
+  </ng-template>
