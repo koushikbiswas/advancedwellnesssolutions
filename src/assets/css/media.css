@@ -567,12 +567,6 @@
         font-size: 30px;
     }
 
-    .nmsfunneldoctor_block5_content_right img {
-        width: 830px;
-    }
-    
-
-
     .landing_top1_left_textcon_text h3 {
         font-size: 20px;
     }
@@ -728,10 +722,7 @@
     .nmsfunneldoctorblock6img2 {
         top: -80px;
     }
-    .nmsfunneldoctor_block5_content_right img {
-        width: 620px;
-        margin-left: -25%;
-    }
+   
     .nmsfunneldoctor_block5_topright_inner_2 h2 {
         font-size: 38px;
         line-height: normal;
@@ -1015,6 +1006,13 @@
 
 
 @media only screen and (max-width: 1199px) {
+    .nmsfunneldoctor_block9 .videolist:nth-child(1){padding-right: 15px;padding-left: 15px;}
+.nmsfunneldoctor_block9 .videolist:nth-child(2){padding-left: 15px; padding-right: 15px;}
+.nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
     .nmsfunneldoctor_block8 .nmsfunneldoctor_block_wrapper h2 {
         font-size: 36px;
         line-height: normal;
@@ -1502,6 +1500,9 @@
 }
 
 @media only screen and (max-width: 540px) {
+    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
+        text-align: center;
+    }
     .nmsfunneldoctor_block4 .nmsfunneldoctor_block_wrapper h2 {
         font-size: 34px;
         line-height: 35px;
@@ -1622,7 +1623,24 @@
         padding: 30px 10px;
         flex-wrap: wrap;
     }
-        .nmsfunneldoctor_block3_left {
-            padding-left: auto !important;
-        }
+    .nmsfunneldoctor_block3_left{
+        padding-left: 15px;
+    }
+    .nmsfunneldoctor_block3_right{
+        padding-right: 15px;
+    }   
+    .nmsfunneldoctor_block5 ul li{
+        background: url(../images/bluesquarebullet.png) no-repeat center top 3px;
+    padding: 18px;
+    list-style: none;
+    margin: 0;
+    font-family: 'proximanovasemibold';
+    font-size: 23px;
+    color: #555454;
+    line-height: 23px;
+    margin-top: 0px;
+    width: 100%;
+    float: none;
+    text-align: center;
+    }
 }
