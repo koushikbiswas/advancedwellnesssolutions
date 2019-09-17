@@ -33,18 +33,6 @@ export class HomeComponent implements OnInit {
       console.log(this.cookieservice.check('jwttoken'));
       this.setTempToken();
     }
-    // address: "Test Address"
-    // company: "Test Company"
-    // email: "jamestest@yopmail.com"
-    // firstname: "James"
-    // lastname: "Test"
-    // mobile: "4151214151"
-    // only_productname: ["closer product2", "closer product1"]
-    // phoneno: "4151213141"
-    // product: ["5d5a4f24f4461d2d40773a15", "5d5a4f0df4461d2d40773a14"]
-    // productname: [{product_name: "closer product2", product_id: "5d5a4f24f4461d2d40773a15"},…]
-    // rep_name: "Soon Test"
-    // website: "www.testcompany.com"
     let product:any = ['5d7f16463bd1bb6d1d19359b'];
     this.myform = this.fb.group({
       firstname: ['', Validators.required],
@@ -64,7 +52,7 @@ export class HomeComponent implements OnInit {
     this.http.post(link, { }).subscribe(res => {
         let result:any = res;
         this.cookieservice.set('jwttoken', result.token);
-        console.log(this.cookieservice);
+        
     });
 
     
@@ -100,8 +88,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('this.api_url---');
-    console.log(this.api_url);
     this.router.events.subscribe(() =>
           window.scrollTo({
               top: 0,
