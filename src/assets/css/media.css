@@ -396,6 +396,20 @@
 
 
 @media (max-width: 1440px){
+    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
+        font-size: 20px;
+    }
+    
+    .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper .videolist h2 {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper .videolist:last-child h2 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+
     .listwarppercls {
         width: 450px;
     }
