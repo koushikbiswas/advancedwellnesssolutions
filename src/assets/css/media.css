@@ -395,7 +395,81 @@
 
 
 
+
+@media (max-width: 1420px){
+ 
+    .landing_top2_div5_body {
+        background-position: 110% top !important;
+    }
+
+/*    .landing_top2_div2_body {
+        background-position: 450% bottom !important;
+
+    }*/
+
+    .nmsfunneldoctor_block5_topright_inner_2 h2 {
+        font-size: 36px;
+        line-height: normal;
+    }
+}
+
+
+
+@media (max-width: 1415px) {
+    .btnleftinfo h2 {
+        font-size: 18px;
+        left: 62%;
+    }
+}
+
+@media (max-width: 1400px){
+    .nmsfunneldoctor_block5_topright {
+        width: 70%;
+    }
+    .nmsfunneldoctor_block5_topright_inner_2 h2 {
+        font-size: 36px;
+        line-height: normal;
+    }
+    .nmsfunneldoctor_block6_right h2 {
+        font-size: 36px;
+        line-height: normal;
+    }
+
+
+    .nmsfunneldoctor_block2_left h3 {
+        font-size: 31px;
+        line-height: 30px;
+    }
+    /*   .pateintdetail_left_formnew_right .form-group2row{width: 46.9% !important;}*/
+
+   /* .landing_top2_div2_body {
+        background-position: 660% bottom !important;
+
+    }*/
+    .landing_top1_video_block {
+        width: 100%;
+        margin-top: 560px;
+    }
+    .nmsfunneldoctor_block5_topright {
+        width: 65%;
+    }
+    .nmsfunneldoctor_block5_topright_inner_2 h2 {
+        font-size: 38px;
+        line-height: normal;
+    }
+    .nmsfunneldoctor_block5_topright_inner_2 h3 {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+
+
 @media (max-width: 1366px){
+    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
+        font-size: 20px;
+    }
+
     .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
         font-size: 20px;
     }
@@ -476,74 +550,6 @@
     .landing_top1_right_wrapper .form-group1 .textareablock {
         height: 60px;
         resize: none;
-    }
-}
-
-
-@media (max-width: 1420px){
- 
-    .landing_top2_div5_body {
-        background-position: 110% top !important;
-    }
-
-/*    .landing_top2_div2_body {
-        background-position: 450% bottom !important;
-
-    }*/
-
-    .nmsfunneldoctor_block5_topright_inner_2 h2 {
-        font-size: 36px;
-        line-height: normal;
-    }
-}
-
-
-
-@media (max-width: 1415px) {
-    .btnleftinfo h2 {
-        font-size: 18px;
-        left: 62%;
-    }
-}
-
-@media (max-width: 1400px){
-    .nmsfunneldoctor_block5_topright {
-        width: 70%;
-    }
-    .nmsfunneldoctor_block5_topright_inner_2 h2 {
-        font-size: 36px;
-        line-height: normal;
-    }
-    .nmsfunneldoctor_block6_right h2 {
-        font-size: 36px;
-        line-height: normal;
-    }
-
-
-    .nmsfunneldoctor_block2_left h3 {
-        font-size: 31px;
-        line-height: 30px;
-    }
-    /*   .pateintdetail_left_formnew_right .form-group2row{width: 46.9% !important;}*/
-
-   /* .landing_top2_div2_body {
-        background-position: 660% bottom !important;
-
-    }*/
-    .landing_top1_video_block {
-        width: 100%;
-        margin-top: 560px;
-    }
-    .nmsfunneldoctor_block5_topright {
-        width: 65%;
-    }
-    .nmsfunneldoctor_block5_topright_inner_2 h2 {
-        font-size: 38px;
-        line-height: normal;
-    }
-    .nmsfunneldoctor_block5_topright_inner_2 h3 {
-        font-size: 14px;
-        line-height: 19px;
     }
 }
 

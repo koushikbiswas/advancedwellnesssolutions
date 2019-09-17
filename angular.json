@@ -141,7 +141,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angularssr:serve:production"
+              "devServerTarget": "anServergularssr:serve:production"
             }
           }
         },
