@@ -20,6 +20,8 @@ export class HomeComponent implements OnInit {
   public ready: any;
   public imgval:any;
   public imagemodal:any = 1;
+
+
   // public api_url:any = environment['api_url'];
   public api_url:any = 'https://api.influxhostserver.com/';
 
@@ -64,18 +66,10 @@ export class HomeComponent implements OnInit {
         this.cookieservice.set('jwttoken', result.token);
         console.log(this.cookieservice);
     });
+
+    
   }
 
-  @HostListener("window:scroll", [])
-
-  onWindowScroll() {
-      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
-          this.windowScrolled = true;
-      }
-      else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
-          this.windowScrolled = false;
-      }
-  }
 
   scrollToTop() {
     (function smoothscroll() {
@@ -88,6 +82,17 @@ export class HomeComponent implements OnInit {
         }
 
     })();
+  }
+
+  @HostListener("window:scroll", [])
+
+  onWindowScroll() {
+    if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+      this.windowScrolled = true;
+    }
+    else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+      this.windowScrolled = false;
+    }
   }
 
   toTop() {
