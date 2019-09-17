@@ -395,22 +395,12 @@
 
 
 
-@media (max-width: 1440px){
+@media (max-width: 1366px){
     .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
         font-size: 20px;
     }
     
-    .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper .videolist h2 {
-        margin-bottom: 10px;
-        margin-top: 0px;
-    }
-    .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper .videolist:last-child h2 {
-        margin-bottom: 10px;
-        margin-top: 20px;
-    }
-
-
-    .listwarppercls {
+   .listwarppercls {
         width: 450px;
     }
 
@@ -1020,6 +1010,15 @@
 
 
 @media only screen and (max-width: 1199px) {
+    .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper .videolist h2 {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper .videolist:last-child h2 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
     .nmsfunneldoctor_block9 .videolist:nth-child(1){padding-right: 15px;padding-left: 15px;}
 .nmsfunneldoctor_block9 .videolist:nth-child(2){padding-left: 15px; padding-right: 15px;}
 .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
