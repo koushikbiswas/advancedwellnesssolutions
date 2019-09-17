@@ -96,9 +96,9 @@ export class HomeComponent implements OnInit {
           })
       );
 
-    this.meta.setTitle('Advance Wellness Solutions ');
+    this.meta.setTitle('Advanced Wellness Solutions ');
     this.meta.setTag('og:description', ' ');
-    this.meta.setTag('og:title', 'Advance Wellness Solutions ');
+    this.meta.setTag('og:title', 'Advanced Wellness Solutions ');
     this.meta.setTag('og:type', 'www.advancewellnesssolutions.com/');
     this.meta.setTag('og:image', 'https://www.advancewellnesssolutions.com/assets/images/logo.png');
     
