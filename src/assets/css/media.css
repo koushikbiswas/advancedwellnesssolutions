@@ -106,7 +106,7 @@
     }
 
     .nmsfunneldoctor_block2_left_content2 h2 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
    
@@ -188,10 +188,10 @@
     }
     .landingleftimg2computer {
         position: absolute;
-        bottom: 58px;
-        left: 175px;
+        bottom: 90px;
+        left: 50px;
         z-index: 99;
-        width: 440px;
+        /* width: 440px; */
     }
     .nmsfunneldoctor_block6_right h2 {
         font-size: 42px;
@@ -342,14 +342,17 @@
 
 @media (max-width: 1460px) {
 
+    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
+        font-size: 20px;
+    }
     .spnabigtxt {
         font-size: 30px !important;
         line-height: 34px!important;
     }
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 156px;
         width: 461px;
-    }
+    } */
 
     .nmsfunneldoctor_block2_left h3 {
         font-size: 31px;
@@ -423,6 +426,13 @@
 }
 
 @media (max-width: 1400px){
+    .landingleftimg2computer {
+        position: absolute;
+        bottom: 96px;
+        left: 56px;
+        z-index: 99;
+    }
+
     .nmsfunneldoctor_block5_topright {
         width: 70%;
     }
@@ -466,13 +476,8 @@
 
 
 @media (max-width: 1366px){
-    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
-        font-size: 20px;
-    }
 
-    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
-        font-size: 20px;
-    }
+
     
    .listwarppercls {
         width: 450px;
@@ -619,10 +624,10 @@
         margin-top: 5px;
     }
 
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 160px;
         width: 390px;
-    }
+    } */
     .nmsfunneldoctor_formblock h3 {
         font-size: 21px;
         line-height: 26px;
@@ -647,10 +652,10 @@
     .nmsfunneldoctor_block2_left_content2 h2 {
         font-size: 20px;
     }
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 170px;
         width: 420px;
-    }
+    } */
     .btnleftinfo h2 {
         font-size: 17px;
         line-height: 20px;
@@ -720,10 +725,10 @@
         font-size: 21px;
     }
 
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 196px;
         width: 360px;
-    }
+    } */
 
     .nmsfunneldoctor_block6_right h2 {
         font-size: 34px;
@@ -841,6 +846,12 @@
 }
 
 @media(max-width:1280px) {
+    .landingleftimg2computer {
+        position: absolute;
+        bottom: 96px;
+        left: 14px;
+        z-index: 99;
+    }
     .nmsfunneldoctor_block1 h2 {
         font-size: 24px;
         line-height: normal;
@@ -903,11 +914,11 @@
         font-size: 22px;
     }
 
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 154px;
         width: 360px;
         bottom: 75px;
-    }
+    } */
 }
 
 
@@ -945,10 +956,10 @@
         line-height: 26px !important;
     }
     
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 127px;
         width: 405px;
-    }
+    } */
     .btnleftinfo h2 {
         font-size: 16px;
         line-height: 18px;
@@ -998,14 +1009,21 @@
     .landing_top1_left_textcon_text p {
         font-size: 18px;
     }
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         left: 150px;
         width: 360px;
-    }
+    } */
 
 }
 
 @media(max-width:1220px) {
+    .landingleftimg2computer {
+        position: absolute;
+        bottom: 122px;
+        left: 14px;
+        z-index: 99;
+        width: 502px;
+    }
     .nmsfunneldoctor_formblock h1 {
         font-size: 20px;
         line-height: 32px;
@@ -1140,7 +1158,7 @@
         right: 10%;
         width: auto;
         left: inherit;
-        bottom: 110px;
+        bottom: 200px;
     }
     .nmsfunneldoctor_block2_left_content2 {
         max-width: 100%;
@@ -1359,14 +1377,19 @@
         font-size: 28px;
         line-height: 32px;
     }
-
-
     .landingleftimg2computer {
+        /* right: 15%; */
+        width: 65%;
+        left: 28%;
+        bottom: 15%;
+    }
+
+    /* .landingleftimg2computer {
         right: 15%;
         width: auto;
         left: inherit;
         bottom: 105px;
-    }
+    } */
     .nmsfunneldoctor_block3 h2 {
         min-height: auto;
         font-size: 32px;
@@ -1411,12 +1434,12 @@
     .nmsfunneldoctor_block6_content_wrapper{
         margin: 0px !important;
     }
-    .landingleftimg2computer {
+    /* .landingleftimg2computer {
         right: 15%;
         width: 55%;
         left: inherit;
         bottom: 12%;
-    }
+    } */
 
     .landingleftimg1man {
         width: 300px;
@@ -1479,7 +1502,22 @@
 }
 }
 
+@media only screen and (max-width:767px) {
+.landingleftimg2computer {
+    /* right: 15%; */
+    width: 80%;
+    left: 17%;
+    bottom: 20%;
+}
+}
+
 @media only screen and (max-width:640px) {
+    .landingleftimg2computer {
+        /* right: 15%; */
+        width: 80%;
+        left: 20%;
+        bottom: 22%;
+    }
     .nmsfunneldoctor_block3 h2 {
         min-height: auto;
         font-size: 24px;
@@ -1608,10 +1646,10 @@
     }
 
     .landingleftimg2computer {
-        right: 19%;
-        width: 100%;
+        right: 12%;
+        width: 90%;
         left: inherit;
-        bottom: -14px;
+        bottom: 38px;
         position: inherit;
         z-index: 999;
     }
