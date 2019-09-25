@@ -578,7 +578,17 @@ p{ margin:0; padding:0;}
 
 .nmsfunneldoctor_formblock .form-group {
     position: relative;
+    margin-bottom: 10px;
 }
+
+.errortext{
+    color: #ff0000 !important;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    margin-top:10px;
+}
+
 .nmsfunneldoctor_formblock .form-group:last-child{margin-bottom: 0px;}
 
 .nmsfunneldoctor_formblock .form-group .palceholder{
@@ -606,10 +616,7 @@ p{ margin:0; padding:0;}
     border-radius: 0px;
 }
 
-.bmd-help{
-    color:#ff0000;
-    display: none;
-}
+
 
 
 .nmsfunneldoctor_formblock .btnsubmitwrapper{
