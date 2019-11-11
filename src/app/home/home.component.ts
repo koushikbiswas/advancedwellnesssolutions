@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
       website: [''],
       state: ['', Validators.required],
       created_by: this.activatedroute.snapshot.params.repid,
+      signup:1,
       product: [product]
     })
   }
@@ -112,8 +113,8 @@ export class HomeComponent implements OnInit {
     };
     var result = this.http.get('assets/data/state.json').subscribe(res => {
       this.stateslist = res;
-      console.log('stateslist');
-      console.log(this.stateslist);
+      // console.log('stateslist');
+      // console.log(this.stateslist);
   
     });
     return result;
@@ -123,13 +124,13 @@ export class HomeComponent implements OnInit {
   doSubmit(template: TemplateRef<any>){
 
     this.formSubmited = true;
-    console.log(this.myform.value);
+    //console.log(this.myform.value);
     for (let i in this.myform.controls) {
       this.myform.controls[i].markAsTouched();
     }
     if (this.myform.valid) {
-      let link = this.api_url+'addorupdatedata';
-      let data: any = {
+      var link = this.api_url+'addorupdatedata';
+      var data: any = {
         "source": "leads",
         "data": this.myform.value,
         "sourceobj":["created_by"]
