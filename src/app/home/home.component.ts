@@ -98,10 +98,11 @@ export class HomeComponent implements OnInit {
       );
 
     this.meta.setTitle('Advanced Wellness Solutions ');
-    this.meta.setTag('og:description', ' ');
+    this.meta.setTag('og:description', 'Advanced Wellness Solutions is the Cutting-edge Healthcare Management System for ANS Testing with a built-in proprietary “smart” engagement form & billing profile. ');
     this.meta.setTag('og:title', 'Advanced Wellness Solutions ');
-    this.meta.setTag('og:type', 'www.advancewellnesssolutions.com/');
-    this.meta.setTag('og:image', 'https://www.advancewellnesssolutions.com/assets/images/logo.png');
+    this.meta.setTag('og:type', 'website');
+    this.meta.setTag('og:url', 'https://www.advancedwellness.pro/');
+    this.meta.setTag('og:image', 'https://www.advancedwellness.pro/assets/images/AWSFacebookBanner.jpg');
     
   }
 
