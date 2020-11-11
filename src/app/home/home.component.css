@@ -10,6 +10,8 @@
 .imgcls{max-width:100%;display:block}
 .bottomblock{margin-top:25px}
 .newblock{display:flex;align-items:stretch;justify-content:space-between}
+.nmsfunneldoctor_block3 {padding-bottom: 10px;}
+.nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper h2{font-size: 30px;} 
 
 @media(max-width:1199px){
 .newblock {flex-wrap: wrap;}

@@ -81,7 +81,7 @@
         font-size: 19px;
         line-height: 21px;
     }
-
+    .nmsfunneldoctor_block3 ul li {font-size: 21px;margin-top: 7px;}
 }
 
 
@@ -139,7 +139,6 @@
     .nmsfunneldoctor_block3 ul li {
         font-size: 19px;
         line-height: 20px;
-        margin-top: 10px;
     }
 
 
@@ -341,7 +340,9 @@
 
 
 @media (max-width: 1460px) {
-
+    .nmsfunneldoctor_block3 h2 {
+        margin-bottom: 10px;
+    }
     .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {
         font-size: 20px;
     }
@@ -400,7 +401,7 @@
 
 
 @media (max-width: 1420px){
- 
+    .nmsfunneldoctor_block3 h2 {font-size: 24px;line-height: 25px;}
     .landing_top2_div5_body {
         background-position: 110% top !important;
     }
@@ -1338,6 +1339,7 @@
 
 
 @media(max-width:991px) {
+    .nmsfunneldoctor_block9 .nmsfunneldoctor_block_wrapper h2 {text-align: center;margin-top: 10px;}
     .nmsfunneldoctor_block8 ol li:before {
         font-size: 22px;
     }
