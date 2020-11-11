@@ -13,9 +13,10 @@
 .nmsfunneldoctor_block3 {padding-bottom: 10px;}
 .nmsfunneldoctor_block9.videos .nmsfunneldoctor_block_wrapper h2{font-size: 30px;} 
 
-@media(max-width:1199px){
+@media(max-width:1199px){ 
 .newblock {flex-wrap: wrap;}
-.nmsfunneldoctor_block9 .col-lg-6.videolist {width: 100%;margin-right: auto;}
+.nmsfunneldoctor_block9 .col-lg-6.videolist {width: 100%;margin-right: auto;margin-top: 20px;}
+.nmsfunneldoctor_block9 .col-lg-6.videolist:first-child{margin-top: 0;}
 }
 @media(max-width:640px){
 .videolist .videolistinner .topblock {flex-wrap: wrap;}
