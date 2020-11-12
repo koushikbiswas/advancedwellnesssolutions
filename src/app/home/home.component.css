@@ -15,13 +15,13 @@
 
 @media(max-width:1199px){ 
 .newblock {flex-wrap: wrap;}
-.nmsfunneldoctor_block9 .col-lg-6.videolist {width: 100%;margin-right: auto;margin-top: 20px;}
+.nmsfunneldoctor_block9 .col-lg-6.videolist {width: 100%;margin-right: auto; margin-top: 20px;}
 .nmsfunneldoctor_block9 .col-lg-6.videolist:first-child{margin-top: 0;}
 }
 @media(max-width:640px){
 .videolist .videolistinner .topblock {flex-wrap: wrap;}
 .videolist .videolistinner .topblock .leftpart .imgcls {text-align: center;margin: 0 auto 20px;}
-.videolist .topblock .rightpart {border-top: 2px solid #2fa827;padding-top: 15px;border-left: none;}
+.videolist .topblock .rightpart {border-top: 2px solid #2fa827;padding-top: 15px !important;border-left: none;padding: 0;}
 .videolist .topblock .rightpart p {text-align: center;}
 .nmsfunneldoctor_block9 .videolist:nth-child(2){padding-right: 0;}
 .nmsfunneldoctor_block9 .videolist:nth-child(1){padding-left: 0;}
